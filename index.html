@@ -10,14 +10,14 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --primary-color: #3b82f6;
-            --secondary-color: #2563eb;
-            --dark-bg: #0a0e27;
-            --darker-bg: #060912;
-            --card-bg: rgba(15, 23, 42, 0.6);
+            --primary-color: #14b8a6;
+            --secondary-color: #0d9488;
+            --dark-bg: #0b1220;
+            --darker-bg: #06090f;
+            --card-bg: rgba(11, 20, 38, 0.65);
             --text-light: #cbd5e1;
             --text-muted: #94a3b8;
-            --border-color: rgba(59, 130, 246, 0.2);
+            --border-color: rgba(20, 184, 166, 0.22);
         }
 
         body {
@@ -55,16 +55,16 @@
         .section-title::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 5px; background: var(--primary-color); border-radius: 3px; }
 
         #accueil { display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 50%, #1a1f3a 100%); }
-        .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; background: linear-gradient(135deg, var(--primary-color), #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; background: linear-gradient(135deg, var(--primary-color), #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .hero-subtitle { font-size: 1.3rem; color: var(--text-muted); margin-bottom: 30px; }
         .hero-description { max-width: 700px; margin: 0 auto 40px; color: var(--text-light); line-height: 1.8; }
 
-        .btn { display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3); border: none; cursor: pointer; font-size: 1rem; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5); }
+        .btn { display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s; box-shadow: 0 10px 30px rgba(20, 184, 166, 0.3); border: none; cursor: pointer; font-size: 1rem; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(20, 184, 166, 0.5); }
 
         .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; }
         .competence-card { background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); transition: all 0.3s; }
-        .competence-card:hover { transform: translateY(-10px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3); }
+        .competence-card:hover { transform: translateY(-10px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(20, 184, 166, 0.3); }
         .competence-card h4 { font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color); }
         .competence-card p { color: var(--text-muted); line-height: 1.7; }
 
@@ -164,14 +164,14 @@
         /* Services, Projets, etc. */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
         .service-card { background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); transition: all 0.3s; }
-        .service-card:hover { transform: translateY(-10px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3); }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(20, 184, 166, 0.3); }
         .service-icon { font-size: 2.5rem; margin-bottom: 15px; }
         .service-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 15px; }
         .service-description { color: var(--text-muted); line-height: 1.7; }
 
         .projets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px; }
         .projet-card { background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); transition: all 0.3s; }
-        .projet-card:hover { transform: translateY(-10px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3); }
+        .projet-card:hover { transform: translateY(-10px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(20, 184, 166, 0.3); }
         .projet-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: #fff; }
         .projet-card p { color: var(--text-muted); margin-bottom: 15px; line-height: 1.7; }
         .tech-tag { display: inline-block; padding: 5px 12px; background: rgba(59, 130, 246, 0.1); border: 1px solid var(--primary-color); border-radius: 20px; font-size: 0.85rem; margin-right: 8px; margin-top: 8px; color: var(--primary-color); }
@@ -203,7 +203,7 @@
         input:focus, textarea:focus { outline: none; border-color: var(--primary-color); background: rgba(255,255,255,0.08); }
         textarea { resize: vertical; min-height: 150px; }
         button[type="submit"] { width: 100%; padding: 15px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border: none; border-radius: 8px; color: white; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; }
-        button[type="submit"]:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4); }
+        button[type="submit"]:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(20, 184, 166, 0.4); }
         .contact-info { background: var(--card-bg); padding: 40px; border-radius: 16px; border: 1px solid var(--border-color); }
         .contact-info h3 { margin-bottom: 30px; color: var(--primary-color); }
         .contact-item { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; color: var(--text-light); }
@@ -211,7 +211,7 @@
 
         .organigramme-simple { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; }
         .org-box { background: var(--card-bg); padding: 30px 40px; border-radius: 16px; border: 2px solid var(--border-color); width: 100%; text-align: center; transition: all 0.3s ease; }
-        .org-box:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(59,130,246,0.3); }
+        .org-box:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 15px 40px rgba(20, 184, 166, 0.3); }
         .org-box.direction { background: linear-gradient(135deg, rgba(59,130,246,0.1) 0%, var(--card-bg) 100%); }
         .org-title { font-size: 0.9rem; color: var(--primary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
         .org-name { font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 5px; }
@@ -227,8 +227,8 @@
         .mission-box li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-color); font-weight: bold; }
 
         .projets-intro { max-width: 900px; margin: 0 auto; text-align: center; padding: 40px 20px; }
-        .missions-btn { display: inline-block; padding: 18px 40px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; text-decoration: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(59,130,246,0.3); border: 2px solid transparent; }
-        .missions-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(59,130,246,0.5); border-color: rgba(255,255,255,0.3); }
+        .missions-btn { display: inline-block; padding: 18px 40px; background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%); color: white; text-decoration: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(20,184,166,0.3); border: 2px solid transparent; }
+        .missions-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(20,184,166,0.5); border-color: rgba(255,255,255,0.3); }
 
         @media (max-width: 768px) {
             nav ul { flex-direction: column; gap: 1rem; }
@@ -504,22 +504,30 @@
 <section id="projet-system" class="section">
     <div class="container">
         <h2 class="section-title">Projet Système</h2>
-        <p style="max-width:900px;margin-bottom:40px;color:var(--text-light);line-height:1.8;">Cette section présente les projets réalisés en administration système dans le cadre de ma formation BTS SIO SISR.</p>
-        <div class="projets-grid">
-            <div class="projet-card">
-                <h3>🖥️ Déploiement Active Directory</h3>
-                <p>Mise en place d'une infrastructure Active Directory complète : création des UO, gestion des utilisateurs, déploiement des GPO et sécurisation du domaine.</p>
-                <span class="tech-tag">Windows Server</span>
-                <span class="tech-tag">Active Directory</span>
-                <span class="tech-tag">GPO</span>
-            </div>
-            <div class="projet-card">
-                <h3>💾 Virtualisation &amp; Serveurs</h3>
-                <p>Installation et configuration de machines virtuelles, déploiement de services DHCP/DNS sous Windows Server et Linux.</p>
-                <span class="tech-tag">Hyper-V</span>
-                <span class="tech-tag">DHCP</span>
-                <span class="tech-tag">DNS</span>
-                <span class="tech-tag">Linux</span>
+        <p style="max-width:900px;margin-bottom:60px;color:var(--text-light);line-height:1.8;">Dans le cadre du BTS SIO SISR, j'ai déployé une infrastructure <strong style="color:#fff;">Active Directory</strong> complète reproduisant l'environnement d'un domaine d'entreprise réel, de la configuration du contrôleur de domaine jusqu'à l'automatisation des droits d'accès.</p>
+
+        <div style="max-width:900px;margin:0 auto;">
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;">
+                <div style="background:linear-gradient(135deg,#0a0e1a 0%,#0d1b3e 50%,#112050 100%);padding:40px;text-align:center;position:relative;min-height:180px;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+                    <i class="fab fa-windows" style="font-size:3.2rem;color:#0078d4;margin-bottom:15px;position:relative;z-index:1;"></i>
+                    <div style="font-size:1.4rem;font-weight:800;color:#fff;position:relative;z-index:1;letter-spacing:0.5px;">Active Directory</div>
+                    <div style="font-size:0.9rem;color:#94a3b8;position:relative;z-index:1;margin-top:6px;">Gestion des comptes &amp; Services d'annuaire Windows</div>
+                </div>
+                <div style="padding:35px;">
+                    <p style="color:var(--text-light);line-height:1.8;margin-bottom:20px;">Active Directory (AD) est le service d'annuaire de Microsoft qui centralise la gestion de l'ensemble des ressources du réseau. Ce projet couvre la mise en place complète d'un domaine Windows : création des <strong style="color:#fff;">Unités Organisationnelles (UO)</strong> pour structurer les ressources, gestion des <strong style="color:#fff;">groupes de sécurité</strong>, création des comptes utilisateurs, déploiement des <strong style="color:#fff;">GPO</strong> (stratégies de groupe), configuration des <strong style="color:#fff;">partages de fichiers par UO</strong> et connexion <strong style="color:#fff;">LDAP</strong> pour l'authentification centralisée.</p>
+                    <p style="color:var(--text-light);line-height:1.8;margin-bottom:25px;">L'infrastructure a été montée sur Windows Server 2019 en environnement virtualisé, avec création d'une arborescence d'UO hiérarchique (Direction, RH, Technique, Invités), attribution des droits par groupe, et automatisation des lecteurs réseau via GPO.</p>
+                    <div style="margin-bottom:25px;">
+                        <span class="tech-tag">Windows Server 2019</span>
+                        <span class="tech-tag">Active Directory</span>
+                        <span class="tech-tag">GPO</span>
+                        <span class="tech-tag">LDAP</span>
+                        <span class="tech-tag">Partage de fichiers</span>
+                        <span class="tech-tag">DNS interne</span>
+                    </div>
+                    <a href="TD_Active_Directory.pdf" download style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#fff;color:#111;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;border:1px solid #ddd;">
+                        <i class="fas fa-download"></i> TD_Active_Directory.pdf
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -529,26 +537,61 @@
 <section id="projet-reseau" class="section">
     <div class="container">
         <h2 class="section-title">Projet Réseau</h2>
-        <p style="max-width:900px;margin-bottom:40px;color:var(--text-light);line-height:1.8;">Cette section présente les projets réalisés en infrastructure réseau dans le cadre de ma formation BTS SIO SISR.</p>
-        <div class="projets-grid">
-            <div class="projet-card">
-                <h3>🌐 VPN Site-to-Site</h3>
-                <p>Mise en œuvre d'un tunnel VPN sécurisé WireGuard entre un routeur MikroTik et un VPS distant pour l'interconnexion de sites.</p>
-                <span class="tech-tag">WireGuard</span>
-                <span class="tech-tag">MikroTik</span>
-                <span class="tech-tag">VPN</span>
-            </div>
-            <div class="projet-card">
-                <h3>🔥 Pare-feu pfSense</h3>
-                <p>Configuration et administration d'un pare-feu pfSense : règles de filtrage, NAT, supervision du trafic réseau.</p>
-                <span class="tech-tag">pfSense</span>
-                <span class="tech-tag">Firewall</span>
-                <span class="tech-tag">NAT</span>
+        <p style="max-width:900px;margin-bottom:60px;color:var(--text-light);line-height:1.8;">Dans le cadre du BTS SIO SISR, j'ai mis en place un <strong style="color:#fff;">portail captif</strong> sous pfSense permettant de contrôler l'accès au réseau Wi-Fi de l'entreprise. Tout utilisateur invité est automatiquement redirigé vers une page d'authentification avant d'accéder à Internet.</p>
+
+        <div style="max-width:900px;margin:0 auto;">
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;">
+
+                <!-- Bannière illustrative portail captif -->
+                <div style="background:linear-gradient(135deg,#04141a 0%,#072030 50%,#0a2a40 100%);padding:40px;text-align:center;position:relative;min-height:200px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;">
+                    <!-- Schéma SVG : Invité → Portail → Internet -->
+                    <svg viewBox="0 0 420 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:420px;position:relative;z-index:1;">
+                        <!-- Bloc Invité -->
+                        <rect x="2" y="20" width="88" height="50" rx="8" fill="rgba(20,184,166,0.12)" stroke="#14b8a6" stroke-width="1.2"/>
+                        <text x="46" y="42" text-anchor="middle" fill="#2dd4bf" font-size="10" font-family="monospace" font-weight="600">INVITÉ</text>
+                        <text x="46" y="58" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="monospace">Wi-Fi connect.</text>
+                        <!-- Flèche 1 -->
+                        <line x1="92" y1="45" x2="126" y2="45" stroke="#14b8a6" stroke-width="1.5" stroke-dasharray="4,2"/>
+                        <polygon points="126,41 134,45 126,49" fill="#14b8a6"/>
+                        <!-- Bloc Portail Captif -->
+                        <rect x="136" y="15" width="148" height="60" rx="8" fill="rgba(20,184,166,0.18)" stroke="#0d9488" stroke-width="1.8"/>
+                        <text x="210" y="37" text-anchor="middle" fill="#fff" font-size="10.5" font-family="monospace" font-weight="700">PORTAIL CAPTIF</text>
+                        <text x="210" y="52" text-anchor="middle" fill="#2dd4bf" font-size="8.5" font-family="monospace">pfSense – Authentification</text>
+                        <text x="210" y="65" text-anchor="middle" fill="#94a3b8" font-size="8" font-family="monospace">Login / Mot de passe</text>
+                        <!-- Flèche 2 -->
+                        <line x1="286" y1="45" x2="320" y2="45" stroke="#14b8a6" stroke-width="1.5"/>
+                        <polygon points="320,41 328,45 320,49" fill="#14b8a6"/>
+                        <!-- Bloc Internet -->
+                        <rect x="330" y="20" width="88" height="50" rx="8" fill="rgba(13,148,136,0.12)" stroke="#0d9488" stroke-width="1.2"/>
+                        <text x="374" y="42" text-anchor="middle" fill="#2dd4bf" font-size="10" font-family="monospace" font-weight="600">INTERNET</text>
+                        <text x="374" y="58" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="monospace">Accès autorisé</text>
+                        <!-- Croix refus sans auth -->
+                        <line x1="108" y1="70" x2="130" y2="80" stroke="#f87171" stroke-width="1.2" stroke-dasharray="3,2"/>
+                        <text x="106" y="84" fill="#f87171" font-size="8" font-family="monospace">Refusé sans auth.</text>
+                    </svg>
+                    <div style="font-size:1.3rem;font-weight:800;color:#fff;letter-spacing:0.5px;z-index:1;">Portail Captif – Wi-Fi Invités</div>
+                    <div style="font-size:0.9rem;color:#94a3b8;z-index:1;">pfSense · Authentification forcée avant accès réseau</div>
+                </div>
+
+                <div style="padding:35px;">
+                    <p style="color:var(--text-light);line-height:1.8;margin-bottom:20px;">Ce projet consiste à déployer un <strong style="color:#fff;">portail captif</strong> sur un pare-feu <strong style="color:#fff;">pfSense</strong> afin de sécuriser l'accès au réseau Wi-Fi destiné aux visiteurs et aux invités de l'entreprise. Lorsqu'un invité se connecte au point d'accès sans fil, son navigateur est automatiquement redirigé vers une page d'authentification hébergée par pfSense : l'accès à Internet n'est accordé qu'après saisie d'identifiants valides.</p>
+                    <p style="color:var(--text-light);line-height:1.8;margin-bottom:25px;">La mise en œuvre inclut la <strong style="color:#fff;">création d'un SSID dédié</strong> aux invités isolé du réseau interne par un VLAN, la configuration du portail captif dans pfSense avec redirection HTTPS, la gestion des comptes utilisateurs (vouchers ou comptes locaux), et la définition de règles de <strong style="color:#fff;">pare-feu</strong> pour autoriser uniquement le trafic web tout en bloquant l'accès aux ressources internes de l'entreprise.</p>
+                    <div style="margin-bottom:25px;">
+                        <span class="tech-tag">pfSense</span>
+                        <span class="tech-tag">Portail Captif</span>
+                        <span class="tech-tag">VLAN</span>
+                        <span class="tech-tag">Wi-Fi / SSID</span>
+                        <span class="tech-tag">Authentification</span>
+                        <span class="tech-tag">Règles Firewall</span>
+                    </div>
+                    <a href="TD_Portail_Captif.pdf" download style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#fff;color:#111;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;border:1px solid #ddd;">
+                        <i class="fas fa-download"></i> TD_Portail_Captif.pdf
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
 <!-- Missions Réalisées -->
 <section id="missions" class="section">
     <div class="container">
