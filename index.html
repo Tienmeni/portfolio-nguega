@@ -254,23 +254,14 @@
         <ul>
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#profil">Mon Profil</a></li>
-            <!-- BTS SIO avec dropdown Projet Système / Projet Réseau -->
             <li class="dropdown">
-                <a href="#bts-sio">BTS SIO ▼</a>
-                <div class="dropdown-content">
-                    <a href="#projet-system">Projet Système</a>
-                    <a href="#projet-reseau">Projet Réseau</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#stages">Stages ▼</a>
+                <a href="#stages">École et Entreprise ▼</a>
                 <div class="dropdown-content">
                     <a href="#missions">Missions réalisées</a>
                     <a href="#organigramme">Organigramme</a>
                     <a href="#services">Services</a>
                 </div>
             </li>
-            <!-- Missions remplace Mes Projets, avec En Formation / En Entreprise -->
             <li class="dropdown">
                 <a href="#missions-section">Missions ▼</a>
                 <div class="dropdown-content">
@@ -278,7 +269,13 @@
                     <a href="#missions-entreprise">En Entreprise</a>
                 </div>
             </li>
-            <li><a href="#epreuves">Épreuves</a></li>
+            <li class="dropdown">
+                <a href="#bts-sio">BTS SIO ▼</a>
+                <div class="dropdown-content">
+                    <a href="#projet-system">Projet Système</a>
+                    <a href="#projet-reseau">Projet Réseau</a>
+                </div>
+            </li>
             <li><a href="#veille">Veille Technologique</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -786,3 +783,417 @@
 
 
 <!-- Missions En Entreprise -->
+<section id="missions-entreprise" class="section">
+    <div class="container">
+        <h2 class="section-title">Missions – En Entreprise</h2>
+        <p style="max-width:900px;margin-bottom:60px;color:var(--text-light);line-height:1.8;">Voici les missions techniques réalisées lors de mon stage chez <strong style="color:#fff;">Cohérence-IT</strong>, entreprise spécialisée en infrastructure informatique et transformation numérique.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:50px;">
+
+            <!-- Active Directory -->
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;">
+                <div style="background:linear-gradient(135deg,#0a0e1a 0%,#0d1b3e 50%,#112050 100%);padding:35px;text-align:center;min-height:150px;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+                    <i class="fab fa-windows" style="font-size:2.8rem;color:#0078d4;margin-bottom:12px;"></i>
+                    <div style="font-size:1.2rem;font-weight:700;color:#fff;">Déploiement Active Directory</div>
+                </div>
+                <div style="padding:30px;">
+                    <p style="color:var(--text-light);line-height:1.8;margin-bottom:15px;">Déploiement complet d'Active Directory pour centraliser la gestion des utilisateurs et des ressources réseau de l'entreprise.</p>
+                    <ul style="list-style:none;padding:0;color:var(--text-light);margin-bottom:20px;">
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Installation et configuration d'un contrôleur de domaine</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Création des UO, groupes et comptes utilisateurs</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Déploiement de GPO (installation silencieuse Chrome)</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Lecteurs réseau automatisés par UO</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Documentation de l'architecture et procédures</li>
+                    </ul>
+                    <span class="tech-tag">Windows Server</span>
+                    <span class="tech-tag">Active Directory</span>
+                    <span class="tech-tag">GPO</span>
+                    <span class="tech-tag">LDAP</span>
+                </div>
+            </div>
+
+            <!-- Gestion incidents -->
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;">
+                <div style="background:linear-gradient(135deg,#0a1a0a 0%,#0d3e1b 50%,#104a20 100%);padding:35px;text-align:center;min-height:150px;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+                    <i class="fas fa-tools" style="font-size:2.8rem;color:#22c55e;margin-bottom:12px;"></i>
+                    <div style="font-size:1.2rem;font-weight:700;color:#fff;">Gestion d'Incidents Critiques</div>
+                </div>
+                <div style="padding:30px;">
+                    <p style="color:var(--text-light);line-height:1.8;margin-bottom:15px;">Prise en charge et résolution d'incidents techniques urgents impactant les utilisateurs et services critiques.</p>
+                    <ul style="list-style:none;padding:0;color:var(--text-light);margin-bottom:20px;">
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Traitement de tickets via système de ticketing</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Diagnostic et résolution matériels/logiciels</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Rétablissement rapide des services en panne</li>
+                        <li style="padding:6px 0 6px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">✓</span>Rédaction de documentation et bases de connaissances</li>
+                    </ul>
+                    <span class="tech-tag">Support N1/N2</span>
+                    <span class="tech-tag">Ticketing</span>
+                    <span class="tech-tag">Diagnostic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Compétences -->
+<section id="competences" class="section">
+    <div class="container">
+        <h2 class="section-title">Mes Compétences</h2>
+        <p style="max-width:900px;margin-bottom:60px;color:var(--text-light);line-height:1.8;">Compétences techniques et savoir-faire développés au cours de ma formation BTS SIO SISR et de mes expériences en entreprise.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;">
+
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;padding:30px;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+                    <i class="fas fa-network-wired" style="font-size:1.8rem;color:var(--primary-color);"></i>
+                    <h4 style="color:var(--primary-color);font-size:1.1rem;margin:0;">Réseaux</h4>
+                </div>
+                <div style="space-y:8px;">
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>TCP/IP &amp; VLAN</span><span>90%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:90%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Routage / Switching</span><span>80%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:80%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>pfSense / Firewall</span><span>75%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:75%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>MikroTik RouterOS</span><span>70%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:70%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;padding:30px;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+                    <i class="fas fa-server" style="font-size:1.8rem;color:var(--primary-color);"></i>
+                    <h4 style="color:var(--primary-color);font-size:1.1rem;margin:0;">Systèmes</h4>
+                </div>
+                <div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Windows Server / AD</span><span>85%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:85%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Linux (Debian/Ubuntu)</span><span>70%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:70%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Virtualisation (VMware/VBox)</span><span>75%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:75%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>GPO &amp; Administration AD</span><span>80%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:80%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;padding:30px;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+                    <i class="fas fa-shield-alt" style="font-size:1.8rem;color:var(--primary-color);"></i>
+                    <h4 style="color:var(--primary-color);font-size:1.1rem;margin:0;">Sécurité &amp; Dev</h4>
+                </div>
+                <div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Cybersécurité (bases)</span><span>65%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:65%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>HTML / CSS / JavaScript</span><span>70%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:70%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Python (scripting)</span><span>55%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:55%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.85rem;color:var(--text-light);">
+                            <span>Git / GitHub</span><span>65%</span>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.08);border-radius:4px;height:6px;overflow:hidden;">
+                            <div style="width:65%;height:100%;background:var(--primary-color);border-radius:4px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Veille Technologique -->
+<section id="veille" class="section">
+    <div class="container">
+        <h2 class="section-title">Veille Technologique</h2>
+        <p style="max-width:900px;margin-bottom:50px;color:var(--text-light);line-height:1.8;">Dans le cadre de ma formation BTS SIO SISR, je réalise une veille technologique régulière sur les évolutions des <strong style="color:#fff;">réseaux informatiques</strong>, notamment la sécurité réseau, les protocoles modernes et les nouvelles architectures.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;margin-bottom:60px;">
+
+            <!-- Sujet veille 1 -->
+            <div style="background:var(--card-bg);padding:35px;border-radius:16px;border:1px solid var(--border-color);">
+                <h3 style="font-size:1.4rem;margin-bottom:15px;color:var(--primary-color);"><i class="fas fa-lock" style="margin-right:10px;"></i>Sécurité des réseaux Wi-Fi</h3>
+                <p style="color:var(--text-light);line-height:1.7;margin-bottom:20px;">Évolution des protocoles de sécurité sans fil : de WEP aux vulnérabilités de WPA2 jusqu'au nouveau standard <strong style="color:#fff;">WPA3</strong>. Analyse des attaques de type man-in-the-middle et des solutions de mitigation comme les portails captifs et la segmentation réseau.</p>
+                <h4 style="color:#fff;margin-bottom:12px;font-size:1rem;">Points clés suivis :</h4>
+                <ul style="list-style:none;padding:0;color:var(--text-light);">
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Protocole WPA3 et ses améliorations (SAE, OWE)</li>
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Portails captifs et authentification 802.1X</li>
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>VLAN invités et segmentation réseau</li>
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Détection des points d'accès malveillants (Rogue AP)</li>
+                </ul>
+            </div>
+
+            <!-- Sujet veille 2 -->
+            <div style="background:var(--card-bg);padding:35px;border-radius:16px;border:1px solid var(--border-color);">
+                <h3 style="font-size:1.4rem;margin-bottom:15px;color:var(--primary-color);"><i class="fas fa-project-diagram" style="margin-right:10px;"></i>SD-WAN et réseaux définis par logiciel</h3>
+                <p style="color:var(--text-light);line-height:1.7;margin-bottom:20px;">Le <strong style="color:#fff;">SD-WAN</strong> (Software-Defined Wide Area Network) transforme la gestion des réseaux d'entreprise en dissociant le plan de contrôle du plan de données. Cette approche permet une gestion centralisée, une meilleure qualité de service et une réduction des coûts.</p>
+                <h4 style="color:#fff;margin-bottom:12px;font-size:1rem;">Points clés suivis :</h4>
+                <ul style="list-style:none;padding:0;color:var(--text-light);">
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Architecture SDN et ses composants</li>
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Comparaison SD-WAN vs MPLS traditionnel</li>
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Solutions : Cisco Viptela, VMware NSX, Fortinet</li>
+                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Déploiement cloud et hybride</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Ressources / Liens Fitli & Netacad -->
+        <h3 style="font-size:1.8rem;margin:0 0 30px;color:var(--primary-color);">Ressources &amp; Plateformes de formation</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;">
+
+            <a href="https://www.netacad.com" target="_blank" rel="noopener" style="text-decoration:none;">
+                <div style="background:var(--card-bg);padding:28px;border-radius:16px;border:1px solid var(--border-color);transition:all 0.3s;text-align:center;" onmouseover="this.style.borderColor='var(--primary-color)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.transform='none'">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🌐</div>
+                    <h4 style="color:#fff;margin-bottom:8px;">Cisco NetAcad</h4>
+                    <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;">Formations officielles Cisco : CCNA, cybersécurité, réseaux. Cours interactifs avec labs virtuels.</p>
+                    <span style="display:inline-block;margin-top:12px;padding:6px 16px;border:1px solid var(--primary-color);border-radius:20px;font-size:0.85rem;color:var(--primary-color);">Accéder →</span>
+                </div>
+            </a>
+
+            <a href="https://www.fitili.fr" target="_blank" rel="noopener" style="text-decoration:none;">
+                <div style="background:var(--card-bg);padding:28px;border-radius:16px;border:1px solid var(--border-color);transition:all 0.3s;text-align:center;" onmouseover="this.style.borderColor='var(--primary-color)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.transform='none'">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">📡</div>
+                    <h4 style="color:#fff;margin-bottom:8px;">Fitili</h4>
+                    <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;">Plateforme de ressources et exercices en réseaux informatiques pour les étudiants BTS SIO.</p>
+                    <span style="display:inline-block;margin-top:12px;padding:6px 16px;border:1px solid var(--primary-color);border-radius:20px;font-size:0.85rem;color:var(--primary-color);">Accéder →</span>
+                </div>
+            </a>
+
+            <a href="https://openclassrooms.com/fr/courses/2581701-les-reseaux-de-zero" target="_blank" rel="noopener" style="text-decoration:none;">
+                <div style="background:var(--card-bg);padding:28px;border-radius:16px;border:1px solid var(--border-color);transition:all 0.3s;text-align:center;" onmouseover="this.style.borderColor='var(--primary-color)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.transform='none'">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">📚</div>
+                    <h4 style="color:#fff;margin-bottom:8px;">OpenClassrooms – Réseaux</h4>
+                    <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;">Cours "Les réseaux de zéro" : TCP/IP, protocoles, architecture réseau, illustrations claires.</p>
+                    <span style="display:inline-block;margin-top:12px;padding:6px 16px;border:1px solid var(--primary-color);border-radius:20px;font-size:0.85rem;color:var(--primary-color);">Accéder →</span>
+                </div>
+            </a>
+
+            <a href="https://www.it-connect.fr" target="_blank" rel="noopener" style="text-decoration:none;">
+                <div style="background:var(--card-bg);padding:28px;border-radius:16px;border:1px solid var(--border-color);transition:all 0.3s;text-align:center;" onmouseover="this.style.borderColor='var(--primary-color)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.transform='none'">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🔧</div>
+                    <h4 style="color:#fff;margin-bottom:8px;">IT-Connect</h4>
+                    <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;">Tutoriels pratiques sur Windows Server, Active Directory, pfSense et administration système.</p>
+                    <span style="display:inline-block;margin-top:12px;padding:6px 16px;border:1px solid var(--primary-color);border-radius:20px;font-size:0.85rem;color:var(--primary-color);">Accéder →</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+            <form id="contact-form" onsubmit="sendEmail(event)">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Sujet du message" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">
+                    <span id="btn-text"><i class="fas fa-paper-plane" style="margin-right:8px;"></i>Envoyer le message</span>
+                    <span id="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin" style="margin-right:8px;"></i>Envoi en cours...</span>
+                </button>
+                <div id="form-success" style="display:none;margin-top:15px;padding:15px;background:rgba(20,184,166,0.15);border:1px solid var(--primary-color);border-radius:8px;color:var(--primary-color);text-align:center;">
+                    <i class="fas fa-check-circle" style="margin-right:8px;"></i>Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+                </div>
+                <div id="form-error" style="display:none;margin-top:15px;padding:15px;background:rgba(239,68,68,0.15);border:1px solid #ef4444;border-radius:8px;color:#f87171;text-align:center;">
+                    <i class="fas fa-exclamation-circle" style="margin-right:8px;"></i>Une erreur s'est produite. Veuillez réessayer ou me contacter directement par email.
+                </div>
+            </form>
+
+            <div class="contact-info">
+                <h3>Informations de contact</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong style="display:block;color:#fff;">Email</strong>
+                        <a href="mailto:tienmenir@gmail.com" style="color:var(--text-light);text-decoration:none;">tienmenir@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <strong style="display:block;color:#fff;">LinkedIn</strong>
+                        <a href="https://linkedin.com" target="_blank" style="color:var(--text-light);text-decoration:none;">Emmanuel TIENMENI</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <strong style="display:block;color:#fff;">GitHub</strong>
+                        <a href="https://github.com/tienmeni" target="_blank" style="color:var(--text-light);text-decoration:none;">github.com/tienmeni</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong style="display:block;color:#fff;">Localisation</strong>
+                        <span>Paris, Île-de-France</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <strong style="display:block;color:#fff;">Formation</strong>
+                        <span>BTS SIO SISR – ITIC Paris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:rgba(6,9,15,0.9);border-top:1px solid var(--border-color);padding:30px 0;text-align:center;color:var(--text-muted);">
+    <div class="container">
+        <p>© 2025 Emmanuel TIENMENI · BTS SIO SISR · ITIC Paris</p>
+    </div>
+</footer>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    // ============================================================
+    // CONFIGURATION EMAILJS
+    // 1. Crée un compte sur https://www.emailjs.com (gratuit)
+    // 2. Ajoute un service Gmail et note ton SERVICE_ID
+    // 3. Crée un template et note ton TEMPLATE_ID
+    // 4. Récupère ta PUBLIC_KEY dans Account > API Keys
+    // Remplace les valeurs ci-dessous par les tiennes :
+    // ============================================================
+    const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // <-- remplacer
+    const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // <-- remplacer
+    const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // <-- remplacer
+
+    (function(){
+        emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    })();
+
+    function sendEmail(e) {
+        e.preventDefault();
+        const btn       = document.getElementById('submit-btn');
+        const btnText   = document.getElementById('btn-text');
+        const btnLoad   = document.getElementById('btn-loading');
+        const success   = document.getElementById('form-success');
+        const error     = document.getElementById('form-error');
+
+        btn.disabled = true;
+        btnText.style.display = 'none';
+        btnLoad.style.display = 'inline';
+        success.style.display = 'none';
+        error.style.display   = 'none';
+
+        const params = {
+            from_name : document.getElementById('nom').value,
+            from_email: document.getElementById('email').value,
+            subject   : document.getElementById('sujet').value,
+            message   : document.getElementById('message').value,
+            to_email  : 'tienmenir@gmail.com'
+        };
+
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
+            .then(function() {
+                success.style.display = 'block';
+                document.getElementById('contact-form').reset();
+            }, function() {
+                error.style.display = 'block';
+            })
+            .finally(function() {
+                btn.disabled = false;
+                btnText.style.display = 'inline';
+                btnLoad.style.display = 'none';
+            });
+    }
+
+    // CV Modal
+    function openCVModal() {
+        document.getElementById('cvModal').style.display = 'flex';
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') document.getElementById('cvModal').style.display = 'none';
+    });
+</script>
+</body>
+</html>
