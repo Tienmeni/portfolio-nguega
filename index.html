@@ -1234,44 +1234,63 @@
         <h2 class="section-title">Veille Technologique</h2>
         <p style="max-width:900px;margin-bottom:50px;color:#334155;line-height:1.8;">Dans le cadre de ma formation BTS SIO SISR, je réalise une veille technologique régulière sur les évolutions des <strong style="color:#0f172a;">réseaux informatiques</strong>, notamment la sécurité réseau, les protocoles modernes et les nouvelles architectures.</p>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;margin-bottom:60px;">
+        <!-- Article Zero Trust -->
+        <div style="background:var(--card-bg);padding:40px;border-radius:16px;border:1px solid var(--border-color);margin-bottom:60px;box-shadow:0 4px 24px rgba(13,148,136,0.07);">
 
-            <!-- Sujet veille 1 -->
-            <div style="background:var(--card-bg);padding:35px;border-radius:16px;border:1px solid var(--border-color);">
-                <h3 style="font-size:1.4rem;margin-bottom:15px;color:var(--primary-color);"><i class="fas fa-lock" style="margin-right:10px;"></i>Sécurité des réseaux Wi-Fi</h3>
-                <p style="color:#334155;line-height:1.7;margin-bottom:20px;">Évolution des protocoles de sécurité sans fil : de WEP aux vulnérabilités de WPA2 jusqu'au nouveau standard <strong style="color:#0f172a;">WPA3</strong>. Analyse des attaques de type man-in-the-middle et des solutions de mitigation comme les portails captifs et la segmentation réseau.</p>
-                <h4 style="color:#0f172a;margin-bottom:12px;font-size:1rem;">Points clés suivis :</h4>
-                <ul style="list-style:none;padding:0;color:#334155;">
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Protocole WPA3 et ses améliorations (SAE, OWE)</li>
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Portails captifs et authentification 802.1X</li>
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>VLAN invités et segmentation réseau</li>
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Détection des points d'accès malveillants (Rogue AP)</li>
-                </ul>
+            <h3 style="font-size:1.6rem;margin-bottom:20px;color:var(--primary-color);"><i class="fas fa-shield-alt" style="margin-right:10px;"></i>L'Architecture Zero Trust</h3>
+
+            <!-- Intro -->
+            <h4 style="color:#0f172a;font-size:1.05rem;margin-bottom:10px;">Introduction : Le paradigme du "Ne jamais faire confiance, toujours vérifier"</h4>
+            <p style="color:#334155;line-height:1.8;margin-bottom:20px;">
+                Traditionnellement, la sécurité informatique reposait sur le modèle du "château fort" (<em>Castle and Moat</em>) : une fois qu'un utilisateur traversait le périmètre du réseau (le fossé), il obtenait une confiance implicite et un accès quasi-total.<br><br>
+                Avec l'explosion du Cloud, du SaaS et du télétravail, ce périmètre physique a totalement disparu.<br><br>
+                Le <strong style="color:#0f172a;">Zero Trust</strong> (Confiance Zéro) est la réponse moderne à cette évolution. Partant du principe que les menaces peuvent être aussi bien internes qu'externes, ce modèle dicte une règle absolue : aucun utilisateur, appareil ou segment de réseau n'est digne de confiance par défaut. La confiance doit être <strong style="color:#0f172a;">continuellement et explicitement prouvée</strong>.
+            </p>
+
+            <!-- 4 Piliers -->
+            <h4 style="color:#0f172a;font-size:1.05rem;margin-bottom:16px;">Les 4 Piliers Techniques du Zero Trust</h4>
+            <p style="color:#334155;line-height:1.7;margin-bottom:20px;">Pour matérialiser cette philosophie dans une infrastructure, j'ai analysé quatre briques technologiques interconnectées :</p>
+
+            <div style="margin-bottom:20px;padding:20px;background:rgba(13,148,136,0.05);border-left:4px solid var(--primary-color);border-radius:0 8px 8px 0;">
+                <h5 style="color:#0f172a;margin-bottom:8px;font-size:1rem;">1. L'Authentification Multi-Facteurs (MFA) Moderne</h5>
+                <p style="color:#334155;line-height:1.7;margin-bottom:8px;">Le simple couple identifiant/mot de passe est aujourd'hui le maillon faible des cyberattaques. Le MFA impose de valider l'identité via au moins deux facteurs distincts.</p>
+                <p style="color:#334155;line-height:1.7;"><span style="color:var(--primary-color);">•</span> <strong style="color:#475569;">Évolution :</strong> Les attaques par "fatigue MFA" ou par interception de jetons (Man-in-the-Middle) obligent les entreprises à migrer vers un MFA résistant au phishing (clés physiques <strong style="color:#0f172a;">FIDO2</strong> ou <strong style="color:#0f172a;">Passkeys</strong>), qui lient l'authentification au domaine de l'application.</p>
             </div>
 
-            <!-- Sujet veille 2 -->
-            <div style="background:var(--card-bg);padding:35px;border-radius:16px;border:1px solid var(--border-color);">
-                <h3 style="font-size:1.4rem;margin-bottom:15px;color:var(--primary-color);"><i class="fas fa-project-diagram" style="margin-right:10px;"></i>SD-WAN et réseaux définis par logiciel</h3>
-                <p style="color:#334155;line-height:1.7;margin-bottom:20px;">Le <strong style="color:#0f172a;">SD-WAN</strong> (Software-Defined Wide Area Network) transforme la gestion des réseaux d'entreprise en dissociant le plan de contrôle du plan de données. Cette approche permet une gestion centralisée, une meilleure qualité de service et une réduction des coûts.</p>
-                <h4 style="color:#0f172a;margin-bottom:12px;font-size:1rem;">Points clés suivis :</h4>
-                <ul style="list-style:none;padding:0;color:#334155;">
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Architecture SDN et ses composants</li>
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Comparaison SD-WAN vs MPLS traditionnel</li>
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Solutions : Cisco Viptela, VMware NSX, Fortinet</li>
-                    <li style="padding:5px 0 5px 22px;position:relative;"><span style="position:absolute;left:0;color:var(--primary-color);">•</span>Déploiement cloud et hybride</li>
-                </ul>
+            <div style="margin-bottom:20px;padding:20px;background:rgba(13,148,136,0.05);border-left:4px solid var(--primary-color);border-radius:0 8px 8px 0;">
+                <h5 style="color:#0f172a;margin-bottom:8px;font-size:1rem;">2. La Micro-segmentation Réseau</h5>
+                <p style="color:#334155;line-height:1.7;margin-bottom:8px;">Si une infrastructure est compromise, l'objectif est d'éviter l'effet domino.</p>
+                <p style="color:#334155;line-height:1.7;margin-bottom:4px;"><span style="color:var(--primary-color);">•</span> <strong style="color:#475569;">Le principe :</strong> Le réseau global est découpé en zones granulaires virtuellement isolées.</p>
+                <p style="color:#334155;line-height:1.7;"><span style="color:var(--primary-color);">•</span> <strong style="color:#475569;">L'impact :</strong> Cela bloque le déplacement latéral des attaquants. Un serveur web public compromis sera techniquement incapable de communiquer avec la base de données RH, sauf si une règle stricte et dynamique l'y autorise.</p>
             </div>
 
+            <div style="margin-bottom:20px;padding:20px;background:rgba(13,148,136,0.05);border-left:4px solid var(--primary-color);border-radius:0 8px 8px 0;">
+                <h5 style="color:#0f172a;margin-bottom:8px;font-size:1rem;">3. L'Authentification et l'Évaluation Continues</h5>
+                <p style="color:#334155;line-height:1.7;margin-bottom:8px;">Dans un modèle classique, le contrôle se fait à la "porte d'entrée". Le Zero Trust, lui, applique une analyse contextuelle en temps réel.</p>
+                <p style="color:#334155;line-height:1.7;"><span style="color:var(--primary-color);">•</span> <strong style="color:#475569;">En pratique :</strong> Le système évalue en permanence des signaux de risque (L'appareil est-il à jour ? L'utilisateur s'est-il connecté depuis Paris puis New York en 10 minutes ?). Si un comportement anormal est détecté, la session est immédiatement réévaluée, suspendue ou une ré-authentification est exigée.</p>
+            </div>
+
+            <div style="margin-bottom:28px;padding:20px;background:rgba(13,148,136,0.05);border-left:4px solid var(--primary-color);border-radius:0 8px 8px 0;">
+                <h5 style="color:#0f172a;margin-bottom:8px;font-size:1rem;">4. La transition du VPN vers le ZTNA (Zero Trust Network Access)</h5>
+                <p style="color:#334155;line-height:1.7;margin-bottom:8px;">Le VPN traditionnel offre un accès trop large (accès réseau de niveau 3). Le ZTNA redéfinit l'accès distant.</p>
+                <p style="color:#334155;line-height:1.7;"><span style="color:var(--primary-color);">•</span> <strong style="color:#475569;">La différence :</strong> Le ZTNA crée un tunnel chiffré de bout en bout, non pas vers un réseau, mais directement et uniquement vers une application spécifique. L'infrastructure reste totalement invisible sur Internet pour quiconque n'est pas authentifié.</p>
+            </div>
+
+            <!-- Conclusion -->
+            <h4 style="color:#0f172a;font-size:1.05rem;margin-bottom:10px;">Conclusion &amp; Perspectives</h4>
+            <p style="color:#334155;line-height:1.8;">
+                Le Zero Trust n'est pas un produit que l'on achète, mais une stratégie long terme. Il transforme la sécurité en la rendant centrée sur la donnée et l'identité, plutôt que sur l'emplacement géographique. Pour une entreprise, c'est l'assurance d'une résilience accrue face aux ransomwares et une conformité renforcée face aux exigences réglementaires actuelles (comme la directive européenne <strong style="color:#0f172a;">NIS 2</strong>).
+            </p>
         </div>
 
-        <!-- Ressources -->
-        <h3 style="font-size:1.8rem;margin:0 0 30px;color:var(--primary-color);">Ressource de formation</h3>
+        <!-- Mes Sources & Flux de Veille -->
+        <h3 style="font-size:1.8rem;margin:0 0 30px;color:var(--primary-color);">Mes Sources &amp; Flux de Veille</h3>
         <div style="max-width:340px;">
-            <a href="https://www.fitili.fr" target="_blank" rel="noopener" style="text-decoration:none;">
+            <a href="https://feedly.com/i/collection/content/user/e5d5f8bd-a1df-429a-a49b-e635b2dcbe8e/category/0eedb9f0-516b-450d-ab37-10d459586274" target="_blank" rel="noopener" style="text-decoration:none;">
                 <div style="background:var(--card-bg);padding:32px;border-radius:16px;border:1px solid var(--border-color);transition:all 0.3s;text-align:center;" onmouseover="this.style.borderColor='var(--primary-color)';this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.transform='none'">
-                    <div style="font-size:2.8rem;margin-bottom:14px;">📡</div>
-                    <h4 style="color:#0f172a;margin-bottom:10px;font-size:1.2rem;">Fitili</h4>
-                    <p style="color:#64748b;font-size:0.92rem;line-height:1.6;">Plateforme de ressources et exercices en réseaux informatiques pour les étudiants BTS SIO.</p>
+                    <div style="font-size:2.8rem;margin-bottom:14px;">📰</div>
+                    <h4 style="color:#0f172a;margin-bottom:10px;font-size:1.2rem;">Feedly</h4>
+                    <p style="color:#64748b;font-size:0.92rem;line-height:1.6;">Mon flux de veille technologique sur la cybersécurité, les réseaux et les nouvelles architectures.</p>
                     <span style="display:inline-block;margin-top:16px;padding:8px 22px;border:1px solid var(--primary-color);border-radius:20px;font-size:0.9rem;color:var(--primary-color);font-weight:500;">Accéder →</span>
                 </div>
             </a>
