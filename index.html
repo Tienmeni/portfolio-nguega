@@ -613,7 +613,7 @@
                     <div style="font-size:0.9rem;color:#94a3b8;position:relative;z-index:1;margin-top:6px;">Gestion des comptes &amp; Services d'annuaire Windows</div>
                 </div>
                 <div style="padding:35px;">
-                    <p style="color:#334155;line-height:1.8;margin-bottom:20px;">Active Directory (AD) est le service d'annuaire de Microsoft qui centralise la gestion de l'ensemble des ressources du réseau. Ce projet couvre la mise en place complète d'un domaine Windows : création des <strong style="color:#0f172a;">Unités Organisationnelles (UO)</strong> pour structurer les ressources, gestion des <strong style="color:#0f172a;">groupes de sécurité</strong>, création des comptes utilisateurs, déploiement des <strong style="color:#0f172a;">GPO</strong> (stratégies de groupe), configuration des <strong style="color:#0f172a;">partages de fichiers par UO</strong> et connexion <strong style="color:#0f172a;">LDAP</strong> pour l'authentification centralisée.</p>
+                    <p style="color:#334155;line-height:1.8;margin-bottom:20px;">Configuration du partage de dossiers sur un serveur Windows pour permettre un accès centralisé et sécurisé aux ressources d'une association. Cette mission couvre la création des partages réseau, la définition des permissions d'accès par utilisateur ou groupe, et la validation des accès depuis un poste client Windows 10 intégré au domaine.</p>
                     <p style="color:#334155;line-height:1.8;margin-bottom:25px;">L'infrastructure a été montée sur Windows Server 2019 en environnement virtualisé, avec création d'une arborescence d'UO hiérarchique (Direction, RH, Technique, Invités), attribution des droits par groupe, et automatisation des lecteurs réseau via GPO.</p>
                     <div style="margin-bottom:25px;">
                         <span class="tech-tag">Windows Server 2019</span>
@@ -856,17 +856,16 @@
                 <div style="background:linear-gradient(135deg,#1a1f3a 0%,#0d1b4b 50%,#1a2555 100%);padding:40px;text-align:center;position:relative;min-height:180px;display:flex;align-items:center;justify-content:center;flex-direction:column;">
                     <div style="position:absolute;inset:0;background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%230a0e27%22 width=%22100%22 height=%22100%22/><circle cx=%2220%22 cy=%2220%22 r=%2215%22 fill=%22none%22 stroke=%22%233b82f620%22 stroke-width=%221%22/><circle cx%2280%22 cy%2280%22 r%2220%22 fill%22none%22 stroke%22%233b82f615%22 stroke-width%221%22/></svg>') center/cover;opacity:0.5;"></div>
                     <i class="fab fa-windows" style="font-size:3rem;color:#0078d4;margin-bottom:15px;position:relative;z-index:1;"></i>
-                    <div style="font-size:1.3rem;font-weight:800;color:#fff;position:relative;z-index:1;letter-spacing:0.5px;">Active Directory</div>
-                    <div style="font-size:0.9rem;color:#94a3b8;position:relative;z-index:1;margin-top:5px;">Gestion des comptes & Services d'annuaire</div>
+                    <div style="font-size:1.3rem;font-weight:800;color:#fff;position:relative;z-index:1;letter-spacing:0.5px;">Partage Réseau</div>
+                    <div style="font-size:0.9rem;color:#94a3b8;position:relative;z-index:1;margin-top:5px;">Partage de dossiers & Gestion des permissions</div>
                 </div>
                 <div style="padding:30px;">
-                    <p style="color:#334155;line-height:1.8;margin-bottom:20px;">Active Directory (AD) est le service d'annuaire de Microsoft qui centralise la gestion de l'ensemble des ressources du réseau. Cette mission couvre la mise en place complète d'un domaine Windows : création des Unités Organisationnelles (UO) pour structurer les ressources, gestion des groupes de sécurité, création des comptes utilisateurs, déploiement des GPO (stratégies de groupe), configuration des partages de fichiers par UO et connexion LDAP pour l'authentification centralisée.</p>
+                    <p style="color:#334155;line-height:1.8;margin-bottom:20px;">Configuration du partage de dossiers sur un serveur Windows pour permettre un accès centralisé et sécurisé aux ressources d'une association. Cette mission couvre la création des partages réseau, la définition des permissions d'accès par utilisateur ou groupe, et la validation des accès depuis un poste client Windows 10 intégré au domaine.</p>
                     <div style="margin-bottom:20px;">
                         <span class="tech-tag">Windows Server</span>
-                        <span class="tech-tag">Active Directory</span>
-                        <span class="tech-tag">GPO</span>
-                        <span class="tech-tag">LDAP</span>
-                        <span class="tech-tag">Partage fichiers</span>
+                        <span class="tech-tag">Partage réseau</span>
+                        <span class="tech-tag">Permissions NTFS</span>
+                        <span class="tech-tag">Sécurité</span>
                     </div>
                     <button onclick="openADPDF()" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#fff;color:#111;border-radius:8px;font-weight:600;font-size:0.9rem;border:1px solid #ddd;cursor:pointer;">
                         <i class="fas fa-file-pdf"></i> TD_Active_Directory.pdf
