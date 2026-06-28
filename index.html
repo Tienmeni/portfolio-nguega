@@ -1286,7 +1286,24 @@
 
             <!-- Conclusion -->
             <h4 style="color:#0f172a;font-size:1.1rem;margin-bottom:12px;border-left:3px solid var(--primary-color);padding-left:12px;">Conclusion &amp; Perspectives</h4>
-            <p style="color:#334155;line-height:1.8;margin:0;">Le Zero Trust n'est pas un produit que l'on achète, mais une <strong style="color:#0f172a;">stratégie long terme</strong>. Il transforme la sécurité en la rendant centrée sur la donnée et l'identité, plutôt que sur l'emplacement géographique. Pour une entreprise, c'est l'assurance d'une résilience accrue face aux ransomwares et une conformité renforcée face aux exigences réglementaires actuelles (comme la directive européenne <strong style="color:#0f172a;">NIS 2</strong>).</p>
+            <p style="color:#334155;line-height:1.8;margin-bottom:28px;">Le Zero Trust n'est pas un produit que l'on achète, mais une <strong style="color:#0f172a;">stratégie long terme</strong>. Il transforme la sécurité en la rendant centrée sur la donnée et l'identité, plutôt que sur l'emplacement géographique. Pour une entreprise, c'est l'assurance d'une résilience accrue face aux ransomwares et une conformité renforcée face aux exigences réglementaires actuelles (comme la directive européenne <strong style="color:#0f172a;">NIS 2</strong>).</p>
+
+            <button onclick="openVeillePDF()" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#fff;color:#111;border-radius:8px;font-weight:600;font-size:0.9rem;border:1px solid #ddd;cursor:pointer;">
+                <i class="fas fa-file-pdf"></i> Compte_Rendu_Zero_Trust.pdf
+            </button>
+            <script>
+            (function(){
+                var b64="VOTRE_BASE64_ICI";
+                if(b64==="VOTRE_BASE64_ICI"){
+                    window.openVeillePDF=function(){alert("PDF non encore intégré. Remplacez la variable b64 par votre PDF en base64.");};
+                    return;
+                }
+                var bytes=Uint8Array.from(atob(b64),function(c){return c.charCodeAt(0);});
+                var blob=new Blob([bytes],{type:"application/pdf"});
+                var url=URL.createObjectURL(blob);
+                window.openVeillePDF=function(){window.open(url,"_blank");};
+            })();
+            </script>
 
         </div>
 
